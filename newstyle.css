@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+
+}
+
+header.abajo{
+  background: #fff;
+  padding: 15px 20px;
+}
+header .logo{
+  position: relative;
+  color: #9dc140;    ;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 1.5s;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+}
+header ul li:hover{
+  list-style: none;
+  color: #8bc34a;
+}
+
+header ul li a{
+  position: relative;
+  font-family: helvetica;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #5d791d;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+  header{
+   position: fixed;
+   top: 0px;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   transition: 0.7s;
+   padding: 30px 0px;
+   z-index: 10;
+ }
+/*Modificar el logo en telefono*/
+ header .logo{
+   position:fixed;
+   color: white;
+   font-weight: bold;
+   padding: 30px;
+   font-size: 2em;
+   letter-spacing: 0px;
+   transition: 1.5s;
+   text-decoration: none;
+ }
+ header.abajo{
+   background: #8bc34a;
+   padding: 15px 20px;
+ }
+ header.abajo .logo
+ {
+   display: none;
+ }
+
+ nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ header ul{
+   position:absolute ;
+   display: flex;
+   justify-content:center;
+   align-items:flex-end ;
+ }
+ 
+ header ul li{
+   list-style: none;
+ }
+ 
+ header ul li a{
+   position: relative;
+   font-family: helvetica;
+   
+   margin: 9px 9px;
+   text-decoration: none;
+   color: #5d791d;
+   letter-spacing: 0px;
+   font-weight: 150;
+   transition: 0.7s;
+   text-align: center;
+   
+ }
+
+   }
+ 
